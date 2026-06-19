@@ -1,0 +1,432 @@
+:root {
+
+  --verde: #1A2E2C;
+  --verde-oscuro: #12211F;
+
+  --oro: #A8906A;
+
+  --crema: #F5F0E8;
+
+  --texto: #2E2A27;
+
+  --gris: #6A635D;
+
+  --blanco: #FFFFFF;
+
+  --sombra: 0 10px 35px rgba(0,0,0,.12);
+
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+
+  font-family:'Inter',sans-serif;
+
+  color:var(--texto);
+
+  background:var(--crema);
+
+  line-height:1.7;
+
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+a{
+  text-decoration:none;
+}
+
+.container{
+  width:min(1200px,90%);
+  margin:auto;
+}
+
+.section{
+  padding:100px 0;
+}
+
+.bg-light{
+  background:#fbf8f4;
+}
+
+/* ==========================
+HEADER
+========================== */
+
+.header{
+
+  position:fixed;
+
+  top:0;
+
+  width:100%;
+
+  z-index:1000;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:18px 5%;
+
+  background:rgba(245,240,232,.88);
+
+  backdrop-filter:blur(12px);
+
+  border-bottom:1px solid rgba(0,0,0,.05);
+
+}
+
+.header nav{
+
+  display:flex;
+
+  gap:30px;
+
+}
+
+.header nav a{
+
+  color:var(--verde);
+
+  font-weight:500;
+
+}
+
+.logo img{
+  height:48px;
+}
+
+.btn-whatsapp-header{
+
+  background:var(--verde);
+
+  color:white;
+
+  padding:10px 20px;
+
+  border-radius:30px;
+
+  font-size:.9rem;
+
+}
+
+/* ==========================
+HERO
+========================== */
+
+.hero{
+
+  min-height:100vh;
+
+  background:
+  linear-gradient(
+  rgba(0,0,0,.40),
+  rgba(0,0,0,.45)
+  ),
+  url("../assets/hero/hero-chinacota.webp");
+
+  background-size:cover;
+
+  background-position:center;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-align:center;
+
+  color:white;
+
+  padding:120px 20px;
+
+}
+
+.hero-content{
+
+  max-width:900px;
+
+}
+
+.hero-logo{
+
+  width:360px;
+
+  margin:auto auto 40px;
+
+}
+
+.hero h1{
+
+  font-family:'Cormorant Garamond',serif;
+
+  font-size:4rem;
+
+  font-weight:600;
+
+  margin-bottom:20px;
+
+}
+
+.hero p{
+
+  font-size:1.2rem;
+
+  max-width:700px;
+
+  margin:auto;
+
+}
+
+.hero-buttons{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:20px;
+
+  margin-top:40px;
+
+}
+
+/* ==========================
+BOTONES
+========================== */
+
+.btn-primary{
+
+  background:var(--oro);
+
+  color:white;
+
+  padding:14px 28px;
+
+  border-radius:40px;
+
+  font-weight:600;
+
+  transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+  transform:translateY(-2px);
+
+}
+
+.btn-secondary{
+
+  border:1px solid white;
+
+  color:white;
+
+  padding:14px 28px;
+
+  border-radius:40px;
+
+}
+
+/* ==========================
+TIPOGRAFIA
+========================== */
+
+h2{
+
+  font-family:'Cormorant Garamond',serif;
+
+  color:var(--verde);
+
+  font-size:3rem;
+
+  margin-bottom:25px;
+
+}
+
+h3{
+
+  font-family:'Cormorant Garamond',serif;
+
+  color:var(--verde);
+
+}
+
+/* ==========================
+HISTORIA
+========================== */
+
+.history-grid{
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:60px;
+
+  align-items:center;
+
+}
+
+.history-grid img{
+
+  border-radius:16px;
+
+  box-shadow:var(--sombra);
+
+}
+
+/* ==========================
+ORIGENES
+========================== */
+
+.cards{
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:30px;
+
+  margin-top:40px;
+
+}
+
+.card{
+
+  background:white;
+
+  padding:40px;
+
+  border-radius:20px;
+
+  text-align:center;
+
+  box-shadow:var(--sombra);
+
+}
+
+/* ==========================
+PRODUCTO
+========================== */
+
+.product-grid{
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:70px;
+
+  align-items:center;
+
+}
+
+.product-grid img{
+
+  max-width:450px;
+
+  margin:auto;
+
+}
+
+.product-grid ul{
+
+  margin:25px 0;
+
+  padding-left:20px;
+
+}
+
+/* ==========================
+DKAFEEL
+========================== */
+
+.center{
+
+  text-align:center;
+
+}
+
+.seal{
+
+  width:120px;
+
+  margin:auto auto 25px;
+
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+footer{
+
+  background:var(--verde);
+
+  color:white;
+
+  text-align:center;
+
+  padding:40px 20px;
+
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+  .header nav{
+    display:none;
+  }
+
+  .history-grid,
+  .product-grid{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .cards{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .hero-logo{
+
+    width:240px;
+
+  }
+
+  .hero h1{
+
+    font-size:2.7rem;
+
+  }
+
+  .hero-buttons{
+
+    flex-direction:column;
+
+  }
+
+}
